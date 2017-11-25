@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <TableRow
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:weightSum="1">
+
+            <RadioButton android:id="@+id/radio_telcel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dp"
+                />
+            <ImageView
+                android:id="@+id/img_telcel"
+                android:src="@drawable/ic_oxxo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:layout_marginLeft="-14dp"/>
+
+            <RadioButton android:id="@+id/radio_lusacell"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_lusacell"
+                android:src="@drawable/ic_fleven"
+                android:layout_marginRight="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:weightSum="1">
+
+            <RadioButton android:id="@+id/radio_movistar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <ImageView
+                android:id="@+id/img_movistar"
+                android:src="@drawable/ic_electra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="-5dp"/>
+
+            <RadioButton android:id="@+id/radio_movile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_movile"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_benavides" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp" >
+
+            <RadioButton android:id="@+id/radio_nextel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-6dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_nextel"
+                android:src="@drawable/ic_telecomm"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="-10dp"/>
+
+            <RadioButton android:id="@+id/radio_unefon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:layout_marginLeft="2dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_unefon"
+                android:src="@drawable/ic_copel"
+                android:layout_marginLeft="6dp"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</LinearLayout>

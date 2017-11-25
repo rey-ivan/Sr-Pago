@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.cobra.srpagopos.fragments.RechargeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/lin_layaut"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="40dp"
+            android:id="@+id/btn_time_air"
+            android:text="recarga tiempo aire"
+            android:background="@color/button_grey"
+            />
+        <Button
+            android:id="@+id/btn_payment"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="40dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background"
+            android:text="pago de servicios" />
+    </LinearLayout>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="valor"
+        android:layout_above="@+id/lin_layaut"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lbl_value_service"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lbl_value"
+        android:text="Saldo disponibre"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btn_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="ingresar numero de referencia"
+        android:layout_marginTop="15dp"
+        android:background="@color/button_grey"/>
+    <Button
+        android:id="@+id/btn_new_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="ingresar de nuevo referencia"
+        android:background="@color/button_grey"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_background"
+        android:text="recarga"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_rechage_service"
+        android:onClick="rechage"
+
+        />
+    <ListView
+        android:id="@+id/lis_reference"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+
+</LinearLayout>

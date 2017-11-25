@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    tools:context="com.cobra.srpagopos.fragments.OperationsMainFragment"
+    android:background="@android:color/transparent"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/img_operation"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/operations_card" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/lbl_amount"
+        android:layout_above="@+id/img_operation"
+        android:textSize="46sp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saldo disponibre"
+        android:id="@+id/lbl_coment"
+        android:layout_above="@+id/lbl_amount"
+        android:textSize="14sp"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="retira efectivo"
+        android:layout_above="@+id/lbl_coment"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_background"
+        android:id="@+id/btn_cash"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:onClick="retirement"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="retira efectivo"
+        android:background="@color/button_grey"
+        android:layout_above="@+id/btn_cash"
+        android:id="@+id/btn_cancel"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_above="@+id/btn_cancel"
+        android:text="Movimientos"
+        android:id="@+id/lbl_text"
+        android:layout_marginLeft="8dp"
+        android:textSize="25sp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="468dp"
+        android:layout_above="@+id/lbl_text"
+        android:id="@+id/list_operations"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="right" />
+
+</LinearLayout>
